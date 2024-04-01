@@ -1,0 +1,11 @@
+mongodb:
+  host: localhost
+  port: 27017
+  database: NCKH_2024
+  collection: images
+
+file_paths:
+  bin_file: dict/faiss_clip.bin
+  json_path: dict/id2img_fps.json
+  info_path: dict/scene_id2info.json
+  fps_path: dict/fps.json
