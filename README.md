@@ -1,5 +1,5 @@
 ## Pipeline
-<p align="center"><img src="imgs/pipeline.png" width="800"/></p>
+<p align="center"><img src="figs/pipeline.jpg" width="800"/></p>
 
 ## Demo
 [![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://youtu.be/fULnllhIrqY)
