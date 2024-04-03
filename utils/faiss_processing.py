@@ -29,12 +29,17 @@ class MyFaiss:
         return {int(k):v for k,v in js.items()}
     
     def text_search(self, text, k):
+        gpu_index = self.index_clip
+        # res = faiss.StandardGpuResources()
+        # print(faiss.index_cpu_to_gpus_list)
+        # gpu_index = faiss.index_cpu_to_all_gpus(gpu_index)
+
         text = self.translater(text)
         text = clip.tokenize([text]).to(self.__device)
         text_features = self.clip_model.encode_text(text)
         text_features /= text_features.norm(dim=-1, keepdim=True)
         text_features = text_features.cpu().detach().numpy().astype(np.float32)
-        scores, idx_image = self.index_clip.search(text_features, k)
+        scores, idx_image = gpu_index.search(text_features, k)
       
         idx_image = idx_image.flatten()
         
