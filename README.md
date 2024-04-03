@@ -5,7 +5,11 @@
 [![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://youtu.be/fULnllhIrqY)
 
 ## Hướng dẫn sử dụng Video Search
-`Tạo sẵn env python`
+`Tạo conda env python`
+```bash
+conda create -n name_env python=3.9
+conda activate name_env
+```
 
 ### Bước 1: Clone Repository
 ```bash
