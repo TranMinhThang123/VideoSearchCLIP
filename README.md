@@ -37,3 +37,6 @@ pip install -r requirements.txt
 ```
 streamlit run main.py
 ```
+## Appendix
+Demo GUI
+<p align="center"><img src="asset/demo.jpg" width="800"/></p>
